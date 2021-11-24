@@ -22,5 +22,6 @@
     <h4>Olahraga Favorit</h4>
     <ul type="square">
         <li>Hiking</li>
+        <li>Jogging</li>
     </ul>
 </section>
