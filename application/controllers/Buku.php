@@ -1,3 +1,4 @@
+
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
@@ -9,7 +10,7 @@ class Buku extends CI_Controller
         //cek_login();
     }
 
-    //manajemen Buku
+
     public function index()
     {
         $data['judul'] = 'Data Buku';
@@ -48,7 +49,7 @@ class Buku extends CI_Controller
             'numeric' => 'Yang anda masukan bukan angka'
         ]);
 
-        //konfigurasi sebelum gambar diupload
+
         $config['upload_path'] = './assets/img/upload/';
         $config['allowed_types'] = 'jpg|png|jpeg';
         $config['max_size'] = '3000';
@@ -140,7 +141,6 @@ class Buku extends CI_Controller
             'numeric' => 'Yang anda masukan bukan angka'
         ]);
 
-        //konfigurasi sebelum gambar diupload
         $config['upload_path'] = './assets/img/upload/';
         $config['allowed_types'] = 'jpg|png|jpeg';
         $config['max_size'] = '3000';
@@ -148,7 +148,6 @@ class Buku extends CI_Controller
         $config['max_height'] = '1000';
         $config['file_name'] = 'img' . time();
 
-        //memuat atau memanggil library upload
         $this->load->library('upload', $config);
 
         if ($this->form_validation->run() == false) {
